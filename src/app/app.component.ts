@@ -8,35 +8,37 @@ import { Component, OnInit } from '@angular/core';
 
 export class AppComponent implements OnInit {
 
-  //// LE PROPRIETA' VANNO INIZIALIZZATE PRIMA DEL CONSTRUCTOR, INSERENDO DIRETTAMENTE IL VALORE, SENZA UTILIZZARE IL METHOD 'THIS.'
-  // name:string = "paperino";
-  // surname:string = "de papero";
+  title = 'Tour of heroes'
 
-  title:string = "Lista studenti";
-  // students:string[] = ["paperino","pippo","topolino","minnie","pluto","paperina","gastone"]
+  // //// LE PROPRIETA' VANNO INIZIALIZZATE PRIMA DEL CONSTRUCTOR, INSERENDO DIRETTAMENTE IL VALORE, SENZA UTILIZZARE IL METHOD 'THIS.'
+  // // name:string = "paperino";
+  // // surname:string = "de papero";
 
-  students2:any[] = [
-    {
-      name: 'pippo',
-      grade: 7
-    },
-    {
-      name: 'paperino',
-      grade: 4
-    },
-    {
-      name: 'topolino',
-      grade: 10
-    },
-    {
-      name: 'pluto',
-      grade: 3
-    },
-    {
-      name: 'paperone',
-      grade: 8
-    }
-  ]
+  // title:string = "Lista studenti";
+  // // students:string[] = ["paperino","pippo","topolino","minnie","pluto","paperina","gastone"]
+
+  // students2:any[] = [
+  //   {
+  //     name: 'pippo',
+  //     grade: 7
+  //   },
+  //   {
+  //     name: 'paperino',
+  //     grade: 4
+  //   },
+  //   {
+  //     name: 'topolino',
+  //     grade: 10
+  //   },
+  //   {
+  //     name: 'pluto',
+  //     grade: 3
+  //   },
+  //   {
+  //     name: 'paperone',
+  //     grade: 8
+  //   }
+  // ]
 
   constructor() {
 
