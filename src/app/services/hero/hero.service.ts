@@ -4,18 +4,20 @@ import { Hero } from 'src/app/model/hero';
 import { HEROES } from 'src/app/model/mock-heroes';
 import { MessageService } from '../message/message.service';
 
-
-
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class HeroService {
-
-  constructor(private messageServ: MessageService) { }
+  constructor(private messageServ: MessageService) {}
 
   getHeroes(): Observable<Hero[]> {
     const heroes = of(HEROES);
-    this.messageServ.add('HeroService: Eroi caricati')
+    this.messageServ.add('HeroService: Eroi caricati');
     return heroes;
+  }
+  getHero(id: number): Observable<Hero> {
+    const hero = HEROES.find(h => h.id === id)!;
+    this.messageServ.add('H');
+    return of(hero)
   }
 }
